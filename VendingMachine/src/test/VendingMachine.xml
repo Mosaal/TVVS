@@ -7,6 +7,9 @@
 <labels x="179" y="483" width="390" height="22" border="true">
 <text>NONNEGATIVE insertCoin</text>
 </labels>
+<labels x="184" y="517" width="373" height="38" border="true">
+<text>Note: "Test Input" options for generating test code:  Uncheck "Add object reference to accessors" and check other options. </text>
+</labels>
 <place id="P1">
 <graphics>
 <position x="285.0" y="150.0"/>
@@ -49,7 +52,7 @@
 </place>
 <place id="P4">
 <graphics>
-<position x="45.0" y="149.0"/>
+<position x="45.0" y="150.0"/>
 </graphics>
 <name>
 <value>coins</value>
@@ -365,7 +368,7 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="69" y="169" curvePoint="false"/>
+<arcpath id="000" x="69" y="170" curvePoint="false"/>
 <arcpath id="001" x="114" y="189" curvePoint="true"/>
 <arcpath id="002" x="156" y="167" curvePoint="true"/>
 <type value="normal"/>
@@ -423,7 +426,7 @@
 </tagged>
 <arcpath id="000" x="157" y="157" curvePoint="false"/>
 <arcpath id="001" x="114" y="144" curvePoint="true"/>
-<arcpath id="002" x="70" y="155" curvePoint="true"/>
+<arcpath id="002" x="70" y="156" curvePoint="true"/>
 <type value="normal"/>
 </arc>
 <arc id="T6 to P1" source="T6" target="P1">
