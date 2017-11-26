@@ -21,4 +21,8 @@ public class Main {
 		}
 	}
 	
+	public int numStrings(){
+		return onList.size() + offList.size();
+	}
+	
 }
