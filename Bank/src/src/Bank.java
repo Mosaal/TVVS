@@ -52,7 +52,9 @@ public class Bank {
 	
 	public Account createAccount(Person cli, long balance){
 		addClient(cli);
-		Account acc = new Account(cli, balance);
+		Account acc = new Account();
+		acc.setOwner(cli);
+		acc.deposit(balance);
 		accounts.add(acc);
 		return acc;
 	}

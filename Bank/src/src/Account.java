@@ -6,12 +6,7 @@ public class Account {
 	private long balance = 0;
 	private Person owner;
 	
-	public Account(Person owner, long amount) {
-		this.owner = owner;
-		this.balance = amount;
-		if (amount < 0)
-			this.debt = true;
-	}
+	public Account() {}
 
 	public boolean isClosed() {
 		return closed;
@@ -44,14 +39,18 @@ public class Account {
 
 
 	public void deposit(long amount) {
-		this.balance += amount;
-		if(this.balance >= 0)
-			this.debt = false;
+		if (!closed){
+			this.balance += amount;
+			if(this.balance >= 0)
+				this.debt = false;
+		}
 	}
 	public void withdraw(long amount) {
-		this.balance -= amount;
-		if(this.balance >= 0)
-			this.debt = true;
+		if(!closed){
+			this.balance -= amount;
+			if(this.balance >= 0)
+				this.debt = true;
+		}
 	}
 	
 }
