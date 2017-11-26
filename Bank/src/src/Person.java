@@ -10,7 +10,9 @@ public class Person {
 	public String getName() {
 		return name;
 	}
-
+	public void setName(String n) {
+		this.name = n;
+	}
 	
 	public boolean equals(Person obj) {
 		return obj.getName().equals(this.name);
