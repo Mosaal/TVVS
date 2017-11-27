@@ -18,8 +18,8 @@ public class VendingTest extends TestCase {
 
 	public void test() {
 		vending.insertCoin(Coin.DOLLAR);
-		vending.insertCoin(Coin.QUARTER);
-		assertTrue("", vending.getDeposit()==125);
+		vending.insertCoin(Coin.DOLLAR);
+		assertTrue("", vending.getDeposit()==200);
 		vending.purchase(VendingMachine.SODA);	
 		assertTrue("", vending.getSoda().getCount()==14);
 		assertTrue("", vending.getDeposit()==0);
