@@ -51,12 +51,12 @@ public class VendingMachine {
 	}
 		
 	private void calculateChange(int price) {
-		change = deposit - price;
-		deposit = 0;
+		//TODO:
 	}
 
 	public void insertCoin(Coin coin){
-		deposit += coin.value();
+		//TODO: Placeholder value, colleague was supposed to implement Coin class by now
+		deposit += 100;
 	}
 
 	public int getDeposit(){
@@ -64,7 +64,8 @@ public class VendingMachine {
 	}
 
 	public int getChange(){
-		return change;
+		//TODO: Placeholder value until change calculation is implemented
+		return 0;
 	}
 
 	public void returnCoins(){
@@ -76,6 +77,7 @@ public class VendingMachine {
 			if (coffee.getCount()>0 && deposit>=coffee.getPrice()) {
 				coffee.sell();
 				calculateChange(coffee.getPrice());
+				deposit = 0;
 				return true;
 			}
 		} else
@@ -83,6 +85,7 @@ public class VendingMachine {
 			if (juice.getCount()>0 && deposit>=juice.getPrice()) {
 				juice.sell();
 				calculateChange(juice.getPrice());
+				deposit = 0;
 				return true;
 			}
 		} else
@@ -90,6 +93,7 @@ public class VendingMachine {
 			if (soda.getCount()>0 && deposit>=soda.getPrice()) {
 				soda.sell();
 				calculateChange(soda.getPrice());
+				deposit = 0;
 				return true;
 			}
 		}
@@ -97,4 +101,3 @@ public class VendingMachine {
 	} 
 	
 }
-
